@@ -1,0 +1,11 @@
+.:
+итого 4
+drw-rw-r--. 2 alex alex 22 окт 18 11:41 dir
+-rw-r-----. 1 root alex  5 окт 18 11:38 file
+-rw-------. 1 alex alex  0 окт 18 11:54 file1
+-rw-rw-rw-. 1 alex alex  0 окт 18 11:55 file2
+-rw-rw-rw-. 1 alex alex  0 окт 18 12:02 lslr_result.txt
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file
