@@ -1,0 +1,8 @@
+-- Logs begin at Пт 2022-04-01 02:12:02 MSK. --
+апр 01 02:26:49 localhost.localdomain systemd[1]: [/etc/systemd/system/mephi.service:2] Unknown lvalue 'Decription' in section 'Unit'
+апр 01 02:26:49 localhost.localdomain systemd[1]: Started mephi.service.
+апр 01 02:26:49 localhost.localdomain printf[3526]: Hello, MEPhI!
+апр 01 02:29:45 localhost.localdomain systemd[1]: [/etc/systemd/system/mephi.service:2] Unknown lvalue 'Decription' in section 'Unit'
+апр 01 02:29:48 localhost.localdomain systemd[1]: [/etc/systemd/system/mephi.service:2] Unknown lvalue 'Decription' in section 'Unit'
+апр 01 02:30:40 localhost.localdomain systemd[1]: Started mephi.service.
+апр 01 02:30:40 localhost.localdomain printf[3899]: Hello, MEPhI!
