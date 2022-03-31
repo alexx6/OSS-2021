@@ -1,0 +1,131 @@
+    1  ldd /bin/login | grep pam
+    2  ls -l /lib64/libpam*
+    3  ls -l /lib64/sequrity/
+    4  ls -l /lib64/security/
+    5  nano /etc/pam.d/system-auth
+    6  nano /etc/pam.d/su
+    7  sudo nano /etc/pam.d/su
+    8  su -c "hostname mephi"
+    9  su
+   10  sudo nano /etc/pam.d/su
+   11  su
+   12  sudo nano /etc/pam.d/su
+   13  sudo usermod -a -G wheel user1
+   14  sudo useradd -G wheel user1
+   15  su - user1
+   16  sudo su - user1
+   17  groups
+   18  useradd user2
+   19  sudo useradd user2
+   20  sudo su - user2
+   21  sudo nano /etc/pam.d/su
+   22  sudo su - user1
+   23  sud0 su - user2
+   24  sudo su - user2
+   25  sudo nano /etc/pam.d/su
+   26  sudo nano /etc/pam.d/login 
+   27  nano /etc/securetty 
+   28  sudo nano /etc/securetty 
+   29  sudo cp /etc/securetty /etc/securetty.bakk
+   30  sudo nano /etc/securetty.bakk 
+   31  sudo nano /etc/securetty 
+   32  su
+   33  sudo cp /etc/securetty.bakk /etc/securetty
+   34  sudo nano /etc/securetty 
+   35  sudo rm /etc/securetty.bakk 
+   36  sudo nano /etc/pam.d/login 
+   37  man pam_pwquality
+   38  sudo nano /etc/pam.d/system-auth
+   39  passwd
+   40  I was given 5 attempts
+   41  sudo nano /etc/pam.d/system-auth
+   42  man pam_limits
+   43  sudo nano /etc/security/limits.conf 
+   44  sudo su - user1
+   45  man pam_limits
+   46  su - user1
+   47  sudo su - user1
+   48  sudo nano /etc/security/limits.conf 
+   49  sudo su - user1
+   50  sudo nano /etc/security/limits.conf 
+   51  sudo su - user1
+   52  sudo nano /etc/security/limits.conf 
+   53  ls
+   54  nano check_user.c
+   55  sudo nano /etc/pam.d/check
+   56  nano check_user.c
+   57  gcc check_user.c -o check_user -lpam -lpam_misc
+   58  nano check_user.c
+   59  gcc check_user.c -o check_user -lpam -lpam_misc
+   60  sudo nano /etc
+   61  nano check_user.c
+   62  gcc check_user.c -o check_user -lpam -lpam_misc
+   63  yum install pam-devel
+   64  sudo yum install pam-devel
+   65  gcc check_user.c -o check_user -lpam -lpam_misc
+   66  ./check_user 
+   67  d
+   68  ./check_user alex
+   69  ./check_user user1
+   70  sudo su - user1
+   71  sudo passwd user1
+   72  sudp passwd user2
+   73  sudo passwd user2
+   74  ./check_user user1
+   75  sudo su - user1
+   76  sudo ./check_user user1
+   77  sudo ./check_user user2
+   78  sudo nano /etc/pam.d/check
+   79  sudo ls /etc/pam.d/
+   80  sudo ls /etc/
+   81  sudo chage -E 2022-01-01 user1
+   82  sudo ./check_user user1
+   83  groups user2
+   84  sudo ./check_user user2
+   85  sudo nano /etc/pam.d/check
+   86  sudo ./check_user user2
+   87  nano check_user.c
+   88  gcc check_user.c -o check_user -lpam -lpam_misc
+   89  sudo ./check_user user2
+   90  sudo nano /etc/pam.d/check
+   91  nano check_user.c
+   92  gcc check_user.c -o check_user -lpam -lpam_misc
+   93  sudo ./check_user user2
+   94  sudo ./check_user user1
+   95  sudo nano /etc/pam.d/check
+   96  sudo ./check_user user2
+   97  sudo ./check_user user1
+   98  man pam_wheel.so
+   99  man pam_wheel
+  100  sudo nano /etc/pam.d/check
+  101  sudo ./check_user user2
+  102  sudo ./check_user user1
+  103  man pam_wheel
+  104  sudo nano /etc/pam.d/check
+  105  sudo ./check_user user1
+  106  sudo ./check_user user2
+  107  sudo nano /etc/pam.d/check
+  108  sudo ./check_user user1
+  109  sudo ./check_user user2
+  110  group user2
+  111  groups user2
+  112  man pam_wheel
+  113  sudo nano /etc/pam.d/check
+  114  groups user2
+  115  sudo ./check_user user2
+  116  sudo ./check_user user1
+  117  sudo nano /etc/pam.d/check
+  118  sudo ./check_user user1
+  119  sudo ./check_user user2
+  120  sudo nano /etc/pam.d/check
+  121* sudo 
+  122  sudo ./check_user user2
+  123  man pam_unix
+  124  sudo nano /etc/pam.d/check
+  125  nano check_user.c
+  126  sudo nano /etc/pam.d/check
+  127  gcc check_user.c -o check_user -lpam -lpam_misc
+  128  sudo ./check_user user1
+  129  sudo ./check_user user2
+  130  sudo cp /etc/pam.d/check ~/OSS-2021/lab8
+  131  history > ~/OSS-2021/lab8/history.txt
