@@ -1,0 +1,203 @@
+    1  clear
+    2  yum repolist
+    3  yum grouplist
+    4  rpm -qa | less
+    5  rpm -qa | wc -l
+    6  yum list installed | less
+    7  rpm -qa | grep gnuplot
+    8  yum search gnuplot
+    9  yum info gnuplot
+   10  sudo yum install gnuplot
+   11  installed gnuplot-common
+   12  rpm -qi gnuplot
+   13  rpm -qf /usr/bin/gnuplot-wx 
+   14  yum deplist gnuplot
+   15  sudo rpm -e gnuplot-common 
+   16  sudo yum remove gnuplot-common
+   17  sudo nano /etc/yum.repos.d/yandex.repo
+   18  sudo yum clean all
+   19  sudo yum repolist yandex
+   20  sudo yum install @development-tools rpmdev* rpm-sign
+   21  cd
+   22  rpmdev-setuptree
+   23  ls
+   24  cd rpmbuild/SOURCES/
+   25  ls
+   26  mkdir b19-515-07-1.0
+   27  cd b19-515-07-1.0/
+   28  nano b19-515-07
+   29  chmod +x b19-515-07 
+   30  ./b19-515-07 
+   31  cd ../
+   32  tar -cvzf b19-515-07-1.0.tar.gz b19-515-07-1.0
+   33  ls
+   34  cd ../SPECS/
+   35  nano b19-515-07.spec
+   36  rpmbuild -ba b19-515-07.spec 
+   37  nano b19-515-07.spec
+   38  rpmbuild -ba b19-515-07.spec 
+   39  ls
+   40  cd ../
+   41  ls
+   42  cd RPMS/noarch/
+   43  ls
+   44  rpm -i b19-515-07-1.0-1.el7.noarch.rpm 
+   45  sudo rpm -i b19-515-07-1.0-1.el7.noarch.rpm 
+   46  b19-515-07 
+   47  rpm -e b19-515-07 
+   48  sudo rpm -e b19-515-07 
+   49  nano ~/rpmbuild/SPECS/b19-515-07.spec 
+   50  rpmbuild -ba ~/rpmbuild/SPECS/b19-515-07.spec 
+   51  sudo rpmbuild -ba ~/rpmbuild/SPECS/b19-515-07.spec 
+   52  nano ~/rpmbuild/SPECS/b19-515-07.spec 
+   53  rpmbuild -ba ~/rpmbuild/SPECS/b19-515-07.spec 
+   54  nano ~/rpmbuild/SPECS/b19-515-07.spec 
+   55  rpmbuild -ba ~/rpmbuild/SPECS/b19-515-07.spec 
+   56  b19-515-07
+   57  rpm -e gnuplot
+   58  sudo rpm -e gnuplot
+   59  nano ~/rpmbuild/SPECS/b19-515-07.spec 
+   60  rpmbuild -ba ~/rpmbuild/SPECS/b19-515-07.spec 
+   61  rpm -i b19-515-07-1.0-1.el7.noarch.rpm 
+   62  nano ~/rpmbuild/SPECS/b19-515-07.spec 
+   63  man rpm
+   64  yum localinstall b19-515-07-1.0-1.el7.noarch.rpm 
+   65  sudo yum localinstall b19-515-07-1.0-1.el7.noarch.rpm 
+   66  sudo yum remove b19-515-07
+   67  sudo yum remove gnuplot
+   68  cd ~/rpmbuild/SOURCES/
+   69  ls
+   70  mkdir c-b19-515-07-1.0
+   71  cd c-b19-515-07-1.0/
+   72  nano c-b19-515-07.c
+   73  cd ../../SOURCES/
+   74  tar cvfz c-b19-515-07-1.0.tar.gz c-b19-515-1.0
+   75  tar cvfz c-b19-515-07-1.0.tar.gz c-b19-515-07-1.0
+   76  cd ~/rpmbuild/SPECS/
+   77  nano c-b19-515-07.spec
+   78  rpmbuild -ba c-b19-515-07.spec 
+   79  rpm -i ../RPMS/x86_64/c-b19-515-07-1.0-1.el7.x86_64.rpm 
+   80  sudo rpm -i ../RPMS/x86_64/c-b19-515-07-1.0-1.el7.x86_64.rpm 
+   81  c-b19-515-07 
+   82  rmp -e c-b19-515-07.spec 
+   83  rpm -e c-b19-515-07 
+   84  sudo rpm -e c-b19-515-07 
+   85  nano ../SOURCES/c-b19-515-07-1.0/c-b19-515-07.c
+   86  nano ../SPECS/c-b19-515-07.spec
+   87  rpmbuild -ba c-b19-515-07.spec 
+   88  sudo rpm -i ../RPMS/x86_64/c-b19-515-07-1.0-1.el7.x86_64.rpm 
+   89  sudo yum install ../RPMS/x86_64/c-b19-515-07-1.0-1.el7.x86_64.rpm 
+   90  nano ../SPECS/c-b19-515-07.spec
+   91  rpmbuild -ba c-b19-515-07.spec 
+   92  sudo yum install ../RPMS/x86_64/c-b19-515-07-1.0-1.el7.x86_64.rpm 
+   93  gpg2 --gen-key
+   94  sudo yum install heveged
+   95  sudo yum install haveged
+   96  sudo systemctl enable haveged
+   97  sudo systemctl enable havege
+   98  sudo systemctl enable haveged
+   99  sudo systemctl start haveged
+  100  sudo yum install haveged
+  101  sudo yum -y install haveged
+  102  gpg2 --gen-key
+  103  sudo yum install haveged
+  104  sudo yum install haveged base
+  105  haveged
+  106  repolist
+  107  yum repolist
+  108  sudo yum install haveged base/7/x86_64
+  109  sudo yum install haveged CentOS-7 - Base
+  110  yum repolist all
+  111  yum-config-manager --disable yandex-epel
+  112  sudo yum-config-manager --disable yandex-epel
+  113  yum repolist all
+  114  sudo yum install haveged
+  115  sudo yum-config-manager --enable yandex-epel
+  116  sudo yum install haveged
+  117  sudo yum install haveged --nogpgcheck
+  118  sudo systemctl enable haveged.service 
+  119  sudo systemctl start haveged.service 
+  120  gpg2 --gen-key
+  121  gpg2 --export -a 'Ivanov Alexey' > ~/rpmbuild/RPM-GPG-KEY-Ivanov-Alexey
+  122  nano ~/.rpmmacros 
+  123  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+  124  sudo yum install createrepo
+  125  sudo mkdir -p /var/www/html/myrepo
+  126  sudo cp ~/rpmbuild/RPMS/*/*.rpm /var/www/html/myrepo/
+  127  sudo cp ~/rpmbuild/RPM-GPG-KEY-Ivanov-Alexey /var/www/html/myrepo/
+  128  sudo createrepo -v /var/www/html/myrepo/
+  129  sudo nano /etc/yum.repos.d/my.repo
+  130  sudo yum install -y httpd
+  131  sudo systemctl enable httpd.service
+  132  sudo systemctl start httpd.service
+  133  yum repolist
+  134  ls /var/www/html/myrepo/
+  135  sudo nano /etc/yum.repos.d/my.repo
+  136  yum repolist
+  137  sudo yum install c-b19-515-07
+  138  sudo yum install c-b19-515-07 b19-515-07
+  139  nano ~/.rpmmacros 
+  140  sudo rpm --addsign /var/www/*.rpm
+  141  gpg2 --gen-key
+  142  gpg2 --export -a 'Ivanov Alexey' > ~/rpmbuild/RPM-GPG-KEY-Ivanov-Alexey
+  143  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+  144  sudo yum install c-b19-515-07
+  145  gpg2 --list-keys
+  146  gpg --delete-secret-key Ivanov Alexey
+  147  gpg2 --list-keys
+  148  gpg2 --delete-secret-key Ivanov Alexey
+  149  gpg2 --delete-secret-key "Ivanov Alexey"
+  150  gpg2 --delete-secret-key
+  151* 
+  152  gpg2 --gen-key
+  153  gpg2 --export -a 'Alexey Ivanov' > ~/rpmbuild/RPM-GPG-KEY-Alexey-Ivanov
+  154  nano ~/.rpmmacros 
+  155  sudo rpm --addsign /var/www/*.rpm
+  156  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+  157  sudo cp ~/rpmbuild/RPMS/*/*.rpm /var/www/html/myrepo
+  158  sudo cp ~/rpmbuild/RPM-GPG-KEY-Alexey-Ivanov /var/www/html/myrepo
+  159  sudo nano /etc/yum.repos.d/my.repo 
+  160  yum repolist
+  161  sudo yum install c-b19-515-07
+  162  sudo yum install c-b19-515-07 b19-515-07
+  163  ls -la/var/www/
+  164  ls -la /var/www/
+  165  sudo ls -la /var/www/
+  166  sudo ls -la /var/www/html/
+  167  sudo ls -la /var/www/html/myrepo/
+  168  rm /var/www/html/myrepo/RPM-GPG-KEY-Ivanov-Alexey 
+  169  sudo ls -la /var/www/html/myrepo/
+  170  rm /var/www/html/myrepo/RPM-GPG-KEY-Ivanov-Alexey 
+  171  sudo rm /var/www/html/myrepo/RPM-GPG-KEY-Ivanov-Alexey 
+  172  sudo ls -la /var/www/html/myrepo/
+  173  sudo yum install c-b19-515-07 b19-515-07
+  174  sudo ls -la ../RPM
+  175  sudo ls -la ../
+  176  nano ~/.rpmmacros 
+  177  sudo rpm --addsign /var/www/*.rpm
+  178  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+  179  sudo nano /etc/selinux/config 
+  180  gpg2 -list
+  181  gpg2 --list-keys
+  182  gpg2 --list-secret-keys
+  183  gpg2 --delete-key Ivanov Alexey
+  184  gpg2 --list-keys
+  185  gpg2 --delete-key Ivanov Alexey
+  186  gpg2 --list-keys
+  187  gpg2 --list-secret-keys
+  188  gpg2 --export -a 'Alexey Ivanov' > ~/rpmbuild/RPM-GPG-KEY-Alexey-Ivanov
+  189  rpm --addsign ~/rpmbuild/RPMS/*/*.rpm
+  190  sudo yum install c-b19-515-07 b19-515-07
+  191  yum repolist
+  192  sudo yum install c-b19-515-07 b19-515-07
+  193  ls /var/www/html/myrepo/
+  194  nano /var/www/html/myrepo/RPM-GPG-KEY-Alexey-Ivanov 
+  195  nano /var/www/html/myrepo/repodata/repomd.xml 
+  196  createrepo --update /var/www/html/myrepo/
+  197  sudo createrepo --update /var/www/html/myrepo/
+  198  sudo yum install c-b19-515-07 b19-515-07
+  199  history
+  200  mkdir ~/OSS-2021/lab10
+  201  ls ~/OSS-2021/
+  202  history > ~/OSS-2021/lab10/
+  203  history > ~/OSS-2021/lab10/history.txt
