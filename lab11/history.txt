@@ -1,0 +1,21 @@
+    1  uname -r
+    2  rpmdev-setuptree 
+    3  yumdownloader --source-kernel
+    4  yumdownloader --source kernel
+    5  rpm -i kernel-4.18.0-305.10.2.el7.src.rpm 
+    6  ls rpmbuild/SPECS/
+    7  ls rpmbuild/SOURCES/
+    8  rpmbuild -bs ~/rpmbuild/SPECS/kernel.spec
+    9  ls ~/rpmbuild/SRPMS/
+   10  sudo yum-builddep /home/alex/rpmbuild/SRPMS/kernel-4.18.0-305.10.2.el7.src.rpm
+   11  rpmbuild -bp --target=$(uname -m) rpmbuild/SPECS/kernel.spec
+   12  cd rpmbuild/BUILD/kernel-4.18.0-305.10.2.el7/linux-4.18.0-305.10.2.el7.centos.plus.alex.x86_64/
+   13  ls
+   14  cd kernel
+   15  ls
+   16  cd ../
+   17  cd crypto
+   18  ls
+   19  cd ../
+   20  mkdir ~/OSS-2021/lab11
+   21  history > ~/OSS-2021/lab11/history.txt
